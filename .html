@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil CV - Fizan Raka Fakhrizi</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --sidebar: #112a46;
+      --sidebar-soft: #1f3d5e;
+      --accent: #d9a441;
+      --text: #1d1d1f;
+      --muted: #5d6470;
+      --line: #e8edf5;
+      --tag: #eaf1ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef3f9 0%, #f9fafb 100%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: var(--panel);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(17, 42, 70, 0.12);
+      display: flex;
+      min-height: 780px;
+    }
+
+    .sidebar {
+      width: 320px;
+      background: linear-gradient(180deg, var(--sidebar) 0%, var(--sidebar-soft) 100%);
+      color: #fff;
+      padding: 34px 26px 30px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 18px;
+      border: 4px solid rgba(255,255,255,0.25);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    .role {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #dfeaf8;
+      font-weight: 600;
+    }
+
+    .sidebar-section {
+      margin-top: 30px;
+    }
+
+    .sidebar-title {
+      margin: 0 0 14px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #f7d78f;
+      font-weight: 700;
+    }
+
+    .contact-list,
+    .mini-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-list li,
+    .mini-list li {
+      margin-bottom: 12px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #edf3ff;
+    }
+
+    .contact-list a {
+      color: #edf3ff;
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 32px 34px 28px;
+      background: #fff;
+    }
+
+    .section {
+      margin-bottom: 26px;
+    }
+
+    .section-title {
+      display: inline-block;
+      margin: 0 0 14px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--sidebar);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 6px;
+    }
+
+    .section p,
+    .section li {
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 0;
+      text-align: justify;
+    }
+
+    .section ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .section li {
+      margin-bottom: 10px;
+    }
+
+    .ability-header {
+      margin: 0 0 16px;
+      padding: 0 0 10px;
+      font-size: 32px;
+      font-weight: 800;
+      color: #111;
+      border-bottom: 2px solid #111;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .ability-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ability-list li {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 0 0 10px;
+      padding-left: 18px;
+      position: relative;
+      text-align: left;
+      color: #111;
+    }
+
+    .ability-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #111;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .ability-label {
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      background: var(--tag);
+      color: var(--sidebar);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 860px) {
+      .page {
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .content {
+        padding: 22px 20px 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="profile-photo">
+        <img src="pijan.jpeg" alt="Foto profil Fizan Raka Fakhrizi" />
+      </div>
+
+      <h1 class="name">Fizan Raka Fakhrizi</h1>
+      <div class="role">Mahasiswa Informatika</div>
+
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Kontak</h2>
+        <ul class="contact-list">
+          <li>+62 821-1596-7290</li>
+          <li><a href="mailto:fizanraka.fakhrizi@gmail.com">fizanraka.fakhrizi@gmail.com</a></li>
+          <li>Jl. Cikulong No. 28<br />RT 04 / RW 06</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="section">
+        <h2 class="section-title">Profil</h2>
+        <p>
+          Mahasiswa S1 Informatika di Institut Teknologi Nasional Bandung (ITENAS) yang memiliki minat kuat di bidang teknologi, khususnya web development dan pengembangan perangkat lunak. Saya memiliki semangat belajar tinggi, sikap adaptif, dan kemampuan untuk bekerja secara mandiri maupun dalam tim. Saya juga berkomitmen untuk terus berkembang, mengikuti perkembangan teknologi, dan menyelesaikan tantangan dengan penuh dedikasi.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Pendidikan</h2>
+        <ul>
+          <li><span class="meta">2025 - Sekarang</span> | S1 Informatika, Institut Teknologi Nasional Bandung (ITENAS) — IPK: 3.5</li>
+          <li><span class="meta">2022 - 2025</span> | SMA 3 Negeri Kota Serang</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Pengalaman</h2>
+        <ul>
+          <li>
+            <span class="meta">September 2026 - Sekarang</span> | Anggota Youth Advocate ITENAS<br />
+            Terlibat dalam kegiatan berbasis teknologi kampus untuk mendukung inovasi, meningkatkan pengalaman mahasiswa, serta ikut berkontribusi dalam kegiatan yang memiliki dampak positif bagi lingkungan akademik.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Pengalaman</h2>
+        <ul>
+          <li><span class="ability-label">Pemrograman:</span> Python, HTML, CSS, JavaScript</li>
+          <li><span class="ability-label">Bidang Kompetensi:</span> IoT</li>
+          <li><span class="ability-label">Soft Skills:</span> Problem Solving, Kerja Sama Tim, Komunikasi Efektif, Kemampuan Beradaptasi</li>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Pelatihan & Sertifikasi</h2>
+        <ul>
+          <li><span class="meta">Dicoding</span> | Menjadi Pengembang dengan Python, Belajar Dasar AI, Prompt Engineering untuk Software Developer (2025)</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Organisasi</h2>
+        <p>RISTA (Remaja Islam SMAN 3), SMAN 3 | Wakil Ketua (2023 - 2025)</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
